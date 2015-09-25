@@ -26,7 +26,7 @@ do
 
         echo -e "$SSID_KEY\t$SSID_NAME\t\t$SSID_MAC\t\t$ROUTER_KEY\t\t$ROUTER_MAC\t\t$interface"
 
-        QUERY="http://domain_com/routerData/updateRouterSSID.php?SSID_KEY=$SSID_KEY&SSID_MAC=$SSID_MAC&SSID_NAME=$SSID_NAME&ROUTER_KEY=$ROUTER_KEY&ROUTER_MAC=$ROUTER_MAC"
+        QUERY="http://redwifigratis.cl/routerData/updateRouterSSID.php?SSID_KEY=$SSID_KEY&SSID_MAC=$SSID_MAC&SSID_NAME=$SSID_NAME&ROUTER_KEY=$ROUTER_KEY&ROUTER_MAC=$ROUTER_MAC"
         QUERY=`echo $QUERY|sed 's/ /%20/g'`
         echo -e $QUERY
         CODE=`wget $QUERY -O updateRouterStatus`

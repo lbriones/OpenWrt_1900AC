@@ -19,7 +19,7 @@ do
         #echo "$mac=$RSSI=$SSID_KEY=$SSID_MAC=$SSID_NAME=$ROUTER_KEY=$ROUTER_MAC"
         echo "mac=$mac&rssi=$RSSI&SSID_KEY=$SSID_KEY&SSID_MAC=$SSID_MAC&SSID_NAME=$SSID_NAME&ROUTER_KEY=$ROUTER_KEY&ROUTER_MAC=$ROUTER_MAC"
 
-        QUERY="http://domain_com/routerData/addDataSSID.php?mac=$mac&rssi=$RSSI&SSID_KEY=$SSID_KEY&SSID_MAC=$SSID_MAC&SSID_NAME=$SSID_NAME&ROUTER_KEY=$ROUTER_KEY&ROUTER_MAC=$ROUTER_MAC"
+        QUERY="http://redwifigratis.cl/routerData/addDataSSID.php?mac=$mac&rssi=$RSSI&SSID_KEY=$SSID_KEY&SSID_MAC=$SSID_MAC&SSID_NAME=$SSID_NAME&ROUTER_KEY=$ROUTER_KEY&ROUTER_MAC=$ROUTER_MAC"
         QUERY=`echo $QUERY|sed 's/ /%20/g'`
         #echo $QUERY
         CODE=`wget -s $QUERY`
