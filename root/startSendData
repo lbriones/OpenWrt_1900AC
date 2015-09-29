@@ -4,4 +4,3 @@ while ( sleep 30 && /bin/sh /root/sendData.sh) &
 do
 wait $!
 done
-

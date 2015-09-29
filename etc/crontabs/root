@@ -1,2 +1,3 @@
+*/5 * * * * /sbin/fan_ctrl.sh
 */1 * * * * sh /root/updateRouter.sh > /tmp/log/root 2>&1
-0 3 * * 0 reboot
+* * * * * * sh /root/sendData.sh
