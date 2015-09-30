@@ -22,7 +22,7 @@ do
         SSID_MAC=`ifconfig|grep  -w "$interface."|awk '/HWaddr/ {print $5}'`
         ##data
         echo -e "$SSID_KEY\t$SSID_NAME\t\t$SSID_MAC\t\t$ROUTER_KEY\t\t$ROUTER_MAC\t\t$interface"
-        QUERY="http://redfenix.ddns.info/routerData/updateRouterSSID.php?SSID_KEY=$SSID_KEY&SSID_MAC=$SSID_MAC&SSID_NAME=$SSID_NAME&ROUTER_KEY=$ROUTER_KEY&ROUTER_MAC=$ROUTER_MAC"
+        QUERY="http://waifiq.ddns.info/routerData/updateRouterSSID.php?SSID_KEY=$SSID_KEY&SSID_MAC=$SSID_MAC&SSID_NAME=$SSID_NAME&ROUTER_KEY=$ROUTER_KEY&ROUTER_MAC=$ROUTER_MAC"
         QUERY=`echo $QUERY|sed 's/ /%20/g'`
         echo -e $QUERY
         CODE=`wget $QUERY -O updateRouterStatus`
