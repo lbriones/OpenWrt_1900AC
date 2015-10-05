@@ -66,7 +66,7 @@ https://github.com/lbriones/OpenWrt_1900AC/tree/master/root
 - uci set wireless.@wifi-iface[1].mode=ap
 - uci set wireless.@wifi-iface[1].encryption=none
 - uci set wireless.@wifi-iface[1].network=chilli
-- uci set wireless.@wifi-iface[1].ssid='WifiOpen'
+- uci set wireless.@wifi-iface[1].ssid='WifiGratis'
 - uci commit wireless
 - uci set wireless.@wifi-device[0].disabled=0
 - uci commit wireless
